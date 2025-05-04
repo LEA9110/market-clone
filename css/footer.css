@@ -26,3 +26,20 @@ footer {
   align-items: center;
   margin: 0 25px 0 25px;
 }
+@keyframes icons-moving {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.footer-icons__img :hover {
+  animation: 2s icons-moving;
+}
